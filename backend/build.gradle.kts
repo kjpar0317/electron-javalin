@@ -15,5 +15,8 @@ repositories {
 
 dependencies {
 	implementation("io.javalin:javalin:5.4.2")
+	implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.0")
+	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0")
 	implementation("org.slf4j:slf4j-simple:2.0.6")
+	implementation("com.zaxxer:HikariCP:5.0.1")
 }
