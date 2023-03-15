@@ -1,4 +1,7 @@
 import com.kjpar0317.demo.registRouter
+import com.kjpar0317.demo.config.registSecurity
+import com.kjpar0317.demo.config.registException
+
 import io.javalin.Javalin
 
 fun main() {
@@ -6,4 +9,6 @@ fun main() {
         .start(7070)
 
     registRouter(app)
+    registSecurity(app)
+    registException(app)
 }
