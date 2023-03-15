@@ -1,10 +1,17 @@
 package com.kjpar0317.demo.control
 
-import com.kjpar0317.demo.service.TestService
+import com.kjpar0317.demo.service.findByAll
+import com.kjpar0317.demo.service.findByTest
 import io.javalin.http.Context
 
-object TestController {
-    fun getTest(ctx: Context) {
-        ctx.result(TestService.findById())
-    }
+fun getTestControl(ctx: Context) {
+    ctx.result(findByTest())
+}
+
+fun getTest2Control(ctx: Context) {
+    ctx.json(findByAll())
+}
+
+fun getTestError(ctx: Context) {
+    ctx.result("에러테스트").status(500)
 }

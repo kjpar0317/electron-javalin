@@ -5,8 +5,6 @@ package com.kjpar0317.demo.repository
 //    val follower: Column<Long> = long("user_follower").primaryKey()
 //}
 
-object TestRepository {
-    fun test(): String {
-        return "test"
-    }
+fun findByTest(): String {
+    return "test"
 }

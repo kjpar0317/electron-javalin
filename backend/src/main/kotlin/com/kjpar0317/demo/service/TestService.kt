@@ -1,14 +1,13 @@
 package com.kjpar0317.demo.service
 
-import com.kjpar0317.demo.repository.TestRepository
+import com.kjpar0317.demo.repository.findByTest
+import java.util.*
 
-object TestService {
-//    private lateinit var repository: TestRepository
+// 똑같은 이름으로 테스트
+fun findByTest(): String {
+    return findByTest();
+}
 
-//    init {
-//    }
-
-    fun findById(): String {
-        return TestRepository.test();
-    }
+fun findByAll(): List<String> {
+    return listOf("a", "b", "c")
 }
