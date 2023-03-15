@@ -1,4 +1,4 @@
-package com.kjpar0317.demo.control
+package com.kjpar0317.demo.controller
 
 import com.kjpar0317.demo.service.findByAll
 import com.kjpar0317.demo.service.findByTest
