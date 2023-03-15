@@ -5,7 +5,7 @@ import com.kjpar0317.demo.service.findByTest
 import io.javalin.http.Context
 import mu.KotlinLogging
 
-val logger = KotlinLogging.logger { }
+private val logger = KotlinLogging.logger { }
 
 fun getTestControl(ctx: Context) {
     logger.info { "gg" }
