@@ -1,6 +1,3 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import java.util.regex.Pattern.compile
-
 plugins {
 	kotlin("jvm") version "1.8.0"
 }
