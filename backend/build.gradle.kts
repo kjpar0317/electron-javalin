@@ -19,9 +19,9 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0")
 	implementation("io.javalin:javalin:5.4.2")
 
-	compile("org.slf4j:slf4j-simple:2.0.6")
-	compile("com.zaxxer:HikariCP:5.0.1")
-	compile("com.fasterxml.jackson.core:jackson-databind:2.14.2")
-	compile("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.2")
-	compile("com.auth0:java-jwt:4.3.0")
+	api("org.slf4j:slf4j-simple:2.0.6")
+	api("com.zaxxer:HikariCP:5.0.1")
+	api("com.fasterxml.jackson.core:jackson-databind:2.14.2")
+	api("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.2")
+	api("com.auth0:java-jwt:4.3.0")
 }
