@@ -1,4 +1,4 @@
-import com.kjpar0317.demo.registRouter
+import com.kjpar0317.demo.config.registRouter
 import com.kjpar0317.demo.config.registSecurity
 import com.kjpar0317.demo.config.registException
 

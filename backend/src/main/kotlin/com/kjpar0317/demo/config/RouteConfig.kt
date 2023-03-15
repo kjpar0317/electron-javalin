@@ -1,4 +1,4 @@
-package com.kjpar0317.demo
+package com.kjpar0317.demo.config
 
 import com.kjpar0317.demo.controller.getTestControl
 import com.kjpar0317.demo.controller.getTest2Control
