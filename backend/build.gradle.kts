@@ -24,4 +24,7 @@ dependencies {
 	api("com.fasterxml.jackson.core:jackson-databind:2.14.2")
 	api("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.2")
 	api("com.auth0:java-jwt:4.3.0")
+	api("io.github.microutils:kotlin-logging-jvm:3.0.5")
+
+	testImplementation("org.slf4j:slf4j-simple:2.0.6")
 }
