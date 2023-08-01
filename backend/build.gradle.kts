@@ -1,3 +1,5 @@
+import org.gradle.jvm.tasks.Jar
+
 plugins {
 	kotlin("jvm") version "1.8.0"
 }
@@ -12,16 +14,18 @@ repositories {
 }
 
 dependencies {
+	implementation("io.javalin:javalin:5.4.2")
 	implementation("org.jetbrains.kotlin:kotlin-reflect:1.8.0")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0")
-	implementation("io.javalin:javalin:5.4.2")
+	implementation("org.slf4j:slf4j-simple:2.0.6")
+	implementation("com.zaxxer:HikariCP:5.0.1")
+}
 
-	api("org.slf4j:slf4j-simple:2.0.6")
-	api("com.zaxxer:HikariCP:5.0.1")
-	api("com.fasterxml.jackson.core:jackson-databind:2.14.2")
-	api("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.2")
-	api("com.auth0:java-jwt:4.3.0")
-	api("io.github.microutils:kotlin-logging-jvm:3.0.5")
 
-	testImplementation("org.slf4j:slf4j-simple:2.0.6")
+tasks.withType<Jar> {
+	manifest {
+		attributes["Main-Class"] = "MainApplicationKt"
+	}
+	from(configurations.compileClasspath.get().map { if (it.isDirectory()) it else zipTree(it) })
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
